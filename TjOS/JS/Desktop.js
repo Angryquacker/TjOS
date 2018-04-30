@@ -20,10 +20,10 @@ $(document).ready(function() {
     //Show || Hide Desktop Logic
     $("#hideDesk").click(function() {
        if (deskOn == true) {
-           $("section").hide();
+           $("#desk").hide();
            deskOn = false;
        } else {
-           $("section").show();
+           $("#desk").show();
            deskOn = true;
        }
     });
