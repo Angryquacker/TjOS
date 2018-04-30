@@ -42,4 +42,6 @@ footer button {
     color: white;
     cursor: pointer;
     margin: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
