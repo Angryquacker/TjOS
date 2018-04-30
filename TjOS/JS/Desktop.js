@@ -1,8 +1,10 @@
 $(document).ready(function() {
     //Hide Menus
     $("#home").hide();
+    $("#console").hide();
     let homeOn = false;
     let deskOn = true;
+    let consoleOn = false;
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -25,4 +27,28 @@ $(document).ready(function() {
            deskOn = true;
        }
     });
+
+    //Show || Hide Console Logic
+    $("#con").click(function() {
+        if (consoleOn == false) {
+            $("#console").show();
+            consoleOn = true;
+        } else {
+            $("#console").hide();
+            consoleOn = false;
+        }
+    });
 });
+
+function executeCommand() {
+    let command = document.getElementById("com").value;
+    let params = command.split(" ");
+    switch(params[0]) {
+        case "echo":
+            $("#result").text(params[1]);
+            break;
+        default:
+            $("#result").text("Unknown Command");
+            break;
+    }
+}

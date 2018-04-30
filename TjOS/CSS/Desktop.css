@@ -46,3 +46,23 @@ footer button {
     border: 1px solid white;
     text-align: center;
 }
+
+#com {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+#console button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#console p {
+    border: none;
+    margin-left: 10px;
+}
