@@ -1,0 +1,35 @@
+html {
+    background-image: url('../Resources/Images/back.jpg');
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#login-box {
+    text-align: center;
+    background-color: lightslategray;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    height: 25em;
+    border-radius: 25px;
+    border: 2px solid black;
+    opacity: .80;
+    animation-name: light;
+    animation-duration: 2s;
+}
+
+@keyframes light {
+    0% {opacity: 0;}
+    25% {opacity: .25;}
+    50% {opacity: .50;}
+    75% {opacity: .75;}
+    100% {opacity: .80;}
+}
+
+#login-box button {
+    margin-top: 15%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+}
