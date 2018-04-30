@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
     
     //Show || Hide Desktop Logic
-    ("#hideDesk").click(function() {
+    $("#hideDesk").click(function() {
        if (deskOn == true) {
            $(".icon").hide();
            deskOn = false;
