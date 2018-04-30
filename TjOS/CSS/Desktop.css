@@ -35,3 +35,11 @@ footer button {
     border: 1px solid white;
     margin: 2px;
 }
+
+.icon {
+    height: 50px;
+    width: 50px;
+    color: white;
+    cursor: pointer;m
+    argin: 10px;
+}
