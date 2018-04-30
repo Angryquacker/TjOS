@@ -1,18 +1,28 @@
 $(document).ready(function() {
     //Hide Menus
     $("#home").hide();
-    let on = false;
+    let homeOn = false;
+    let deskOn = true;
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
-        if (on == false) {
+        if (homeOn == false) {
             $("#home").show();
-            on = true;
+            homeOn = true;
         } else {
             $("#home").hide();
-            on = false;
+            homeOn = false;
         }   
     });
-
     
+    //Show || Hide Desktop Logic
+    ("#hideDesk").click(function() {
+       if (deskOn == true) {
+           $("section").hide();
+           deskOn = false;
+       } else {
+           $("section").show();
+           deskOn = true;
+       }
+    });
 });
