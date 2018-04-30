@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Do Hyeon', sans-serif;
+    background-image: url('../Resources/Images/Back.jpg');
+}
+
+header {
+    background-color: lightslategrey;
+    font-size: 1.5em;
+    border-bottom: 2px black solid;
+    opacity: .75;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    opacity: .75;
+    bottom: 0px;
+    background-color: lightslategrey;
+    border-top: 2px solid black;
+}
+
+footer button {
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin: 2px;
+}
+
+footer:hover {
+    opacity: 1;
+}
