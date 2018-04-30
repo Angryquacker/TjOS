@@ -18,10 +18,10 @@ $(document).ready(function() {
     //Show || Hide Desktop Logic
     ("#hideDesk").click(function() {
        if (deskOn == true) {
-           $("#desk").hide();
+           $(".icon").hide();
            deskOn = false;
        } else {
-           $("#desk").show();
+           $(".icon").show();
            deskOn = true;
        }
     });
