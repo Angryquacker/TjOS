@@ -15,7 +15,7 @@ header {
     opacity: .75;
 }
 
-header:hover {
+header:hover, footer:hover {
     opacity: 1;
 }
 
@@ -34,8 +34,4 @@ footer button {
     color: white;
     border: 1px solid white;
     margin: 2px;
-}
-
-footer:hover {
-    opacity: 1;
 }
