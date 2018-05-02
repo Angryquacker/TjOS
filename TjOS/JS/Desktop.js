@@ -9,7 +9,7 @@ $(document).ready(function() {
     let areaOn = false;
 
     //Set Text to Last Saved
-    document.getElementById("box").value = document.cookie;
+    //document.getElementById("box").value = document.cookie;
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
