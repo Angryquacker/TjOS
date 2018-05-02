@@ -66,3 +66,27 @@ footer button {
     border: none;
     margin-left: 10px;
 }
+
+#tBox {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    width: 30%;
+    height: 25em;
+}
+
+#box {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#save {
+    border: 1px solid black;
+    color: black;
+    font-size: 1em;
+    background-color: white;
+    margin: 10px;
+}
