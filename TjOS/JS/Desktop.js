@@ -10,6 +10,9 @@ $(document).ready(function() {
 
     //Set Text to Last Saved
     //document.getElementById("box").value = document.cookie;
+    
+    //Set Background-Image
+    //$("html").css("background-image", <Cookie Here>);
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -58,7 +61,7 @@ $(document).ready(function() {
 
 //Console Commands
 function executeCommand() {
-    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text</p>";
+    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text</p><br /><p>background - Sets Background Image to a Given Link</p>";
     let command = document.getElementById("com").value;
     let params = command.split(" ");
     let com = params.shift();
@@ -74,6 +77,10 @@ function executeCommand() {
             $("#result").text("");
             document.getElementById("com").value = "";
             break;
+        case "background":
+            //Make Background Image a Cookie
+            //Cookie = state;
+            $("html").css("background-image", state);
         default:
             $("#result").text("Unknown Command");
             break;
