@@ -80,10 +80,3 @@ function executeCommand() {
     }
 }
 
-//Test Function For Saving Text as a Cookie
-/* function saveText() {
-    document.cookie = "text=" + document.getElementById('box').value;
-    let x = document.cookie;
-    alert(x);
-    alert(document.getElementById('box').value);
-} */
