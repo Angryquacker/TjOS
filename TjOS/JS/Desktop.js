@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 //Console Commands
 function executeCommand() {
-    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text</p><br /><p>background - Sets Background Image to a Given Link</p>";
+    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets Background Image to a Given Link</p>";
     let command = document.getElementById("com").value;
     let params = command.split(" ");
     let com = params.shift();
@@ -77,10 +77,10 @@ function executeCommand() {
             $("#result").text("");
             document.getElementById("com").value = "";
             break;
-        case "background":
+        /* case "background": DARN THING DON'T WANNA WORK
             //Make Background Image a Cookie
             //Cookie = state;
-            $("html").css("background-image", state);
+            $("html").css("background-image", state); */
         default:
             $("#result").text("Unknown Command");
             break;
