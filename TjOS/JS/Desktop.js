@@ -8,11 +8,12 @@ $(document).ready(function() {
     let consoleOn = false;
     let areaOn = false;
 
+    
     //Set Text to Last Saved
     //document.getElementById("box").value = document.cookie;
     
     //Set Background-Image
-    //$("html").css("background-image", <Cookie Here>);
+    //$("html").css("background-image", document.cookie);
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
