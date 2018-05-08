@@ -88,3 +88,8 @@ function executeCommand() {
     }
 }
 
+function saveText() {
+    document.cookie = document.getElementById('box');
+    alert(document.cookie);
+}
+
