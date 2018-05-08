@@ -80,7 +80,7 @@ function executeCommand() {
             break;
         case "background":
             document.cookie = state;
-            $("html").css("background-image", "url(" + state + ")");
+            $("html").css("background-color", state);
             break;
         default:
             $("#result").text("Unknown Command");
