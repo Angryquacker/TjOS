@@ -89,7 +89,7 @@ function executeCommand() {
 }
 
 function saveText() {
-    document.cookie = document.getElementById('box');
+    document.cookie = document.getElementById('box').value;
     alert(document.cookie);
 }
 
