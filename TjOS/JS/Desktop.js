@@ -12,8 +12,8 @@ $(document).ready(function() {
     //Set Text to Last Saved
     //document.getElementById("box").value = document.cookie;
     
-    //Set Background-Image
-    //$("html").css("background-image", document.cookie);
+    //Set Background
+    //$("html").css("background-color", document.cookie);
 
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -80,7 +80,7 @@ function executeCommand() {
             break;
         case "background":
             document.cookie = state;
-            $("html").css("background-color", state);
+            $("html").css({"background-color": state});
             break;
         default:
             $("#result").text("Unknown Command");
