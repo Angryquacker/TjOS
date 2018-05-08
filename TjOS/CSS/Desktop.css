@@ -5,7 +5,7 @@
 
 html {
     font-family: 'Do Hyeon', sans-serif;
-    background-image: url('../Resources/Images/back.jpg');
+    background-color: linear-gradient(to right, blue, lightblue);
 }
 
 header {
