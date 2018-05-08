@@ -78,10 +78,10 @@ function executeCommand() {
             $("#result").text("");
             document.getElementById("com").value = "";
             break;
-        /* case "background": DARN THING DON'T WANNA WORK
-            //Make Background Image a Cookie
-            //Cookie = state;
-            $("html").css("background-image", state); */
+        case "background":
+            document.cookie = state;
+            $("html").css("background-image", state);
+            break;
         default:
             $("#result").text("Unknown Command");
             break;
