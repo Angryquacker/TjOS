@@ -3,6 +3,12 @@ html {
     font-family: 'Do Hyeon', sans-serif;
 }
 
+#user {
+    background-color: black;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 #login-box {
     text-align: center;
     background-color: lightslategray;
