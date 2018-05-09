@@ -15,6 +15,7 @@ html {
     opacity: .80;
     animation-name: light;
     animation-duration: 2s;
+    box-shadow: 5px 5px;
 }
 
 @keyframes light {
