@@ -83,10 +83,10 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
-            if (state == "" || state == " ") {
+           /* if (state == "" || state == " ") {
                 $("html").css('background', "#42b3f4");
-            Cookies.set("bgColor", "#42b3f4", {expires: 365});
-            }
+                Cookies.set("bgColor", "#42b3f4", {expires: 365});
+            } */
             $("html").css('background', state);
             Cookies.set("bgColor", state, {expires: 365});
             break;
