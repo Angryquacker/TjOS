@@ -99,6 +99,4 @@ function executeCommand() {
 //Test Function For Saving Text as a Cookie
 function saveText() {
     Cookies.set('t', document.getElementById("box").value, {expires: 365});
-    alert(Cookies.get('t'));
-    alert(document.getElementById('box').value); 
 }
