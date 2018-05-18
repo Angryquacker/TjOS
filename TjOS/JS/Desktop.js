@@ -15,6 +15,9 @@ $(document).ready(function() {
         document.getElementById("box").value = Cookies.get('t');
     }
     
+    //Set Background Color To Set One
+    $("html").css("background-color", Cookies.get("bgColor"));
+    
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
         if (homeOn == false) {
@@ -77,6 +80,11 @@ function executeCommand() {
         case "clear":
             $("#result").text("");
             document.getElementById("com").value = "";
+            break;
+        case "background":
+            console.log(state);
+            $("html").css('background-color', state);
+            Cookies.set("bgColor", state, {expires: 2});
             break;
         default:
             $("#result").text("Unknown Command");
