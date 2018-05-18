@@ -33,9 +33,11 @@ $(document).ready(function() {
     $("#hideDesk").click(function() {
        if (deskOn == true) {
            $("#desk").hide();
+           $("#hideDesk").text("Show Desktop");
            deskOn = false;
        } else {
            $("#desk").show();
+           $("#hideDesk").text("Hide Desktop");
            deskOn = true;
        }
     });
