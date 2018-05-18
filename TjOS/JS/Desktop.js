@@ -17,6 +17,7 @@ $(document).ready(function() {
     
     //Set Background Color To Set One
     $("html").css("background-color", Cookies.get("bgColor"));
+    $("html").css('linear-gradient', "none");
     
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -84,6 +85,7 @@ function executeCommand() {
         case "background":
             console.log(state);
             $("html").css('background-color', state);
+            $("html").css('linear-gradient', "none");
             Cookies.set("bgColor", state, {expires: 2});
             break;
         default:
