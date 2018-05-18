@@ -83,7 +83,7 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
-            if (params.length < 1) {
+            if (state == "" || state == " ") {
                 $("html").css('background', "#42b3f4");
             Cookies.set("bgColor", "#42b3f4", {expires: 365});
             }
