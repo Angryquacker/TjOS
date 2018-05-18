@@ -83,8 +83,12 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
+            if (params.length < 1) {
+                $("html").css('background', "#42b3f4");
+            Cookies.set("bgColor", "#42b3f4", {expires: 365});
+            }
             $("html").css('background', state);
-            Cookies.set("bgColor", state, {expires: 2});
+            Cookies.set("bgColor", state, {expires: 365});
             break;
         default:
             $("#result").text("Unknown Command");
