@@ -8,13 +8,13 @@ $(document).ready(function() {
     let consoleOn = false;
     let areaOn = false;
 
-    
     //Set Text to Last Saved
-    //document.getElementById("box").value = document.cookie;
+    if (Cookies.get('t') == undefined) {
+        document.getElementById('box').value = "";
+    } else {
+        document.getElementById("box").value = Cookies.get('t');
+    }
     
-    //Set Background
-    //$("html").css("background-color", document.cookie);
-
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
         if (homeOn == false) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 //Console Commands
 function executeCommand() {
-    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets Background Color</p>";
+    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text</p>";
     let command = document.getElementById("com").value;
     let params = command.split(" ");
     let com = params.shift();
@@ -78,13 +78,15 @@ function executeCommand() {
             $("#result").text("");
             document.getElementById("com").value = "";
             break;
-        /* case "background":
-            document.cookie = state;
-            $("html").css({"background-color": state});
-            break; */
         default:
             $("#result").text("Unknown Command");
             break;
     }
 }
 
+//Test Function For Saving Text as a Cookie
+function saveText() {
+    Cookies.set('t', document.getElementById("box").value, {expires: 365});
+    alert(Cookies.get('t'));
+    alert(document.getElementById('box').value;
+}
