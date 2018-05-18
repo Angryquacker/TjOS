@@ -16,8 +16,7 @@ $(document).ready(function() {
     }
     
     //Set Background Color To Set One
-    $("html").css("background-color", Cookies.get("bgColor"));
-    $("html").css('background', "none");
+    $("html").css("background", Cookies.get("bgColor"));
     
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -84,8 +83,7 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
-            $("html").css('background-color', state);
-            $("html").css('background', "none");
+            $("html").css('background', state);
             Cookies.set("bgColor", state, {expires: 2});
             break;
         default:
