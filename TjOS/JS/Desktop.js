@@ -66,7 +66,7 @@ $(document).ready(function() {
     });
     
     //Show || Hide Game Area Logic
-    $("#gameArea").click(funtion() {
+    $("#gameArea").click(function() {
         if (gameOn = false) {
             $("#gameArea").show();
             gameOn = true;
