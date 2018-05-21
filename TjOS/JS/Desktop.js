@@ -7,6 +7,7 @@ $(document).ready(function() {
     let deskOn = true;
     let consoleOn = false;
     let areaOn = false;
+    let gameOn = false;
 
     //Set Text to Last Saved
     if (Cookies.get('t') == undefined) {
@@ -61,6 +62,17 @@ $(document).ready(function() {
         } else {
             $("#area").hide();
             areaOn = false;
+        }
+    });
+    
+    //Show || Hide Game Area Logic
+    $("#gameArea").click(funtion() {
+        if (gameOn = false) {
+            $("#gameArea").show();
+            gameOn = true;
+        } else {
+           $("#gameArea").hide();
+           gameOn = false;
         }
     });
 });
