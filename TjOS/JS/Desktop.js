@@ -65,17 +65,7 @@ $(document).ready(function() {
             areaOn = false;
         }
     });
-    
-    //Show || Hide Game Area Logic
-    $("#g").click(function() {
-        if (gameOn == false) {
-            $("#gameArea").show();
-            gameOn = true;
-        } else {
-           $("#gameArea").hide();
-           gameOn = false;
-        }
-    });
+   
 });
 
 //Console Commands
