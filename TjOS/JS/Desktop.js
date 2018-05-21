@@ -8,7 +8,6 @@ $(document).ready(function() {
     let deskOn = true;
     let consoleOn = false;
     let areaOn = false;
-    let gameOn = false;
 
     //Set Text to Last Saved
     if (Cookies.get('t') == undefined) {
