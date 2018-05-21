@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 //Console Commands
 function executeCommand() {
-    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets the Background Color</p>";
+    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets the Background Color<br />font- Sets the Font</p>";
     let command = document.getElementById("com").value;
     let params = command.split(" ");
     let com = params.shift();
