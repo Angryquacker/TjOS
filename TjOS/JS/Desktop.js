@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#home").hide();
     $("#console").hide();
     $("#area").hide();
+    $("#gameArea").hide();
     let homeOn = false;
     let deskOn = true;
     let consoleOn = false;
