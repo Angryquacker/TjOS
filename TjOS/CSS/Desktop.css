@@ -72,6 +72,7 @@ footer button {
     border: 2px solid black;
     width: 30%;
     height: 25em;
+    position: absolute;
 }
 
 #box {
