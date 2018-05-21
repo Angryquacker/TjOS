@@ -90,11 +90,6 @@ footer button {
     margin: 10px;
 }
 
-#gameArea {
-    display: flex;
-    justify-content: center;
-}
-
 #packman, #snake {
     height: 500px;
     width: 500px;
