@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("html").css("background", Cookies.get("bgColor"));
     
     //Set Font to Font Cookie
-    $("html").css("font-family", Cookies.get("font"));
+    $("body").css("font-family", Cookies.get("font"));
     
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
@@ -100,7 +100,7 @@ function executeCommand() {
             break;
         case "font":
             console.log(state);
-            $("html").css("font-family", state);
+            $("body").css("font-family", state);
             Cookies.set("font", state, {expires: 365});
             break;
         default:
