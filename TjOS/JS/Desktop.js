@@ -20,6 +20,9 @@ $(document).ready(function() {
     //Set Background Color To Set One
     $("html").css("background", Cookies.get("bgColor"));
     
+    //Set Font to Font Cookie
+    $("html").css("font-family", Cookies.get("font"));
+    
     //Show || Hide Menu Logic
     $("#homeOn").click(function() {
         if (homeOn == false) {
@@ -88,12 +91,17 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
-            if (state.toLowerCase() == "clear") {
+            /* if (state.toLowerCase() == "clear") {
                 $("html").css('background', "#42b3f4");
                 Cookies.set("bgColor", "#42b3f4", {expires: 365});
-            }
+            } */
             $("html").css('background', state);
             Cookies.set("bgColor", state, {expires: 365});
+            break;
+        case "font":
+            console.log(state);
+            $("html").css("font-family", state);
+            Cookies.set("font", state, {expires: 365});
             break;
         default:
             $("#result").text("Unknown Command");
