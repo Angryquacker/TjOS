@@ -79,30 +79,37 @@ function executeCommand() {
     switch(com.toLowerCase()) {
         case "echo":
             $("#result").text(state);
+            console.log("Successful Execution");
             break;
         case "help":
             $("#result").html(help);
+            console.log("Successful Execution");
             break;
         case "clear":
             $("#result").text("");
             document.getElementById("com").value = "";
+            console.log("Successful Execution");
             break;
         case "background":
             console.log(state);
             $("html").css('background', state);
             Cookies.set("bgColor", state, {expires: 365});
+            console.log("Successful Execution");
             break;
         case "clearbg":
             $("html").css('background', "#42b3f4");
             Cookies.set("bgColor", "#42b3f4", {expires: 365});
+            console.log("Successful Execution");
             break;
         case "font":
             console.log(state);
             $("body").css("font-family", state);
             Cookies.set("font", state, {expires: 365});
+            console.log("Successful Execution");
             break;
         default:
             $("#result").text("Unknown Command");
+            console.log("Bad Command");
             break;
     }
 }
