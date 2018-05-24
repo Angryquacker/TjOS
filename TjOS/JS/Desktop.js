@@ -112,6 +112,7 @@ function executeCommand() {
             console.log("Bad Command");
             break;
     }
+    document.getElementById('exe').value = '';
 }
 
 //Saves TextArea as a cookie
