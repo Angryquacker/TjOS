@@ -67,12 +67,11 @@ $(document).ready(function() {
             areaOn = false;
         }
     });
-   
 });
 
 //Console Commands
 function executeCommand() {
-    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets the Background Color<br />font- Sets the Font</p>";
+    let help = "<p>echo - Outputs Text<br />help - Shows Comamnds<br />clear - Clears All Text<br />background - Sets the Background Color<br />font- Sets the Font<br />clearbg - Returns Background Color to Default</p>";
     let command = document.getElementById("com").value;
     let params = command.split(" ");
     let com = params.shift();
@@ -90,12 +89,12 @@ function executeCommand() {
             break;
         case "background":
             console.log(state);
-            /* if (state.toLowerCase() == "clear") {
-                $("html").css('background', "#42b3f4");
-                Cookies.set("bgColor", "#42b3f4", {expires: 365});
-            } */
             $("html").css('background', state);
             Cookies.set("bgColor", state, {expires: 365});
+            break;
+        case "clearbg":
+            $("html").css('background', "#42b3f4");
+            Cookies.set("bgColor", "#42b3f4", {expires: 365});
             break;
         case "font":
             console.log(state);
@@ -108,7 +107,7 @@ function executeCommand() {
     }
 }
 
-//Test Function For Saving Text as a Cookie
+//Saves TextArea as a cookie
 function saveText() {
     Cookies.set('t', document.getElementById("box").value, {expires: 365});
 }
