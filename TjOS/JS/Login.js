@@ -3,10 +3,10 @@ $(document).ready(function() {
     $("#wel").show(1500);
     
     $("button").click(function() {
-        if(document.getElementById('wel').value == undefined) {
+        if(document.getElementById('user').value == undefined) {
             alert("Welcome");
         } else {
-            alert('Welcome ' + document.getElementById('wel').value);
+            alert('Welcome ' + document.getElementById('user').value);
         }
     });
 });
