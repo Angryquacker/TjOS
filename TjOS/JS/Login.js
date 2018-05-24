@@ -3,10 +3,10 @@ $(document).ready(function() {
     $("#wel").show(1500);
     
     $("button").click(function() {
-        if(document.getElementById('wel').value != undefined) {
-            alert('Welcome ' + document.getElementById('wel').value);
+        if(document.getElementById('wel').value == undefined) {
+            alert("Welcome");
         } else {
-            alert('Welcome');
+            alert('Welcome ' + document.getElementById('wel').value);
         }
     });
 });
