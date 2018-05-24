@@ -76,6 +76,7 @@ function executeCommand() {
     let params = command.split(" ");
     let com = params.shift();
     let state = params.join(" ");
+    document.getElementById('exe').value = '';
     switch(com.toLowerCase()) {
         case "echo":
             $("#result").text(state);
@@ -112,7 +113,6 @@ function executeCommand() {
             console.log("Bad Command");
             break;
     }
-    document.getElementById('exe').value = '';
 }
 
 //Saves TextArea as a cookie
