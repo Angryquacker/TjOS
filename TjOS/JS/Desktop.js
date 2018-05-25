@@ -76,7 +76,7 @@ function executeCommand() {
     let params = command.split(" ");
     let com = params.shift();
     let state = params.join(" ");
-    document.getElementById('exe').value = '';
+    document.getElementById('com').value = '';
     switch(com.toLowerCase()) {
         case "echo":
             $("#result").text(state);
