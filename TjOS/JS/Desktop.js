@@ -16,6 +16,12 @@ $(document).ready(function() {
         document.getElementById("box").value = Cookies.get('t');
     }
     
+    if (Cookies.get('name') == undefined) {
+        $("#homeN").text("Tj-OS");    
+    } else {
+        $("#homeN").text(Cookies.get('name'));   
+    }
+    
     //Set Background Color To Set One
     $("html").css("background", Cookies.get("bgColor"));
     
