@@ -7,6 +7,7 @@ $(document).ready(function() {
             alert("Welcome");
         } else {
             alert('Welcome ' + document.getElementById('user').value);
+            Cookies.set('name', document.getElementById('user'), {expires: 365});
         }
     });
 });
