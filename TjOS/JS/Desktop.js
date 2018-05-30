@@ -18,7 +18,7 @@ $(document).ready(function() {
     
     //Set Username
     console.log(Cookies.get('name'));
-    if (Cookies.get('name') == undefined) {
+    if (Cookies.get('name') == '{}') {
         $("#homeN").html("Tj-OS");    
     } else {
         $("#homeN").html(Cookies.get('name'));   
