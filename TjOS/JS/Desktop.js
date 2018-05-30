@@ -17,9 +17,9 @@ $(document).ready(function() {
     }
     
     if (Cookies.get('name') == undefined) {
-        $("#homeN").text("Tj-OS");    
+        $("#homeN").html("Tj-OS");    
     } else {
-        $("#homeN").text(Cookies.get('name'));   
+        $("#homeN").html(Cookies.get('name'));   
     }
     
     //Set Background Color To Set One
