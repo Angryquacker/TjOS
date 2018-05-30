@@ -16,6 +16,8 @@ $(document).ready(function() {
         document.getElementById("box").value = Cookies.get('t');
     }
     
+    //Set Username
+    console.log(Cookies.get('name'));
     if (Cookies.get('name') == undefined) {
         $("#homeN").html("Tj-OS");    
     } else {
